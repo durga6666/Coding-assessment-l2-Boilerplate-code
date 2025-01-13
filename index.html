@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="./style.css">
-    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+    <header>
+        <div class="logo">Durga</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="cart">
+        <div class="cart-container">
+            <div class="cart-items">
+            </div>
+            <div class="cart-totals">
+                <p>Subtotal: ₹<span id="subtotal">0</span></p>
+                <p>Total: <span id="total">0</span></p>
+                <button id="checkout-button">Check Out</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-services">
+            <div class="service-item high-quality">High Quality</div>
+            <div class="service-item warranty-protection">Warranty Protection</div>
+        </div>
+    </footer>
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to remove this item?</p>
+            <button id="confirm-remove">Yes</button>
+            <button id="cancel-remove">No</button>
+        </div>
     </div>
-    <!-- Happy coding 😊 -->
+
     <script src="./script.js"></script>
 </body>
-
 </html>
